@@ -69,6 +69,7 @@ html, body {
 
 .page {
     margin: 0;
+    width: 100%;
 }
 
 #projects {
@@ -86,7 +87,28 @@ header {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-#backbutton {
+.backButton {
+    width: 10%;
+    text-align: center;
+    justify-content: center;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    font-family: Courier, monospace;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+}
 
+.backButton:hover {
+    background: white;
+    color: black;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.line {
+    border-bottom: 2px solid black;
 }
 
