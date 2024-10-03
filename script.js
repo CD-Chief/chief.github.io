@@ -18,5 +18,14 @@ function showPage(Button) {
     } else if (buttonName == "projects") {
         document.getElementById(buttonName).setAttribute("style", "display: flex");
     }
+}
 
+function toggleProjectContent(project) {
+    const projectContent = project.querySelector(".project-content");
+    let currentDisplay = window.getComputedStyle(projectContent).display;
+    if (currentDisplay == "none") {
+        projectContent.style.display = "flex";
+    } else {
+        projectContent.style.display = "none";
+    }
 }
