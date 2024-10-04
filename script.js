@@ -9,7 +9,6 @@ function hidePages() {
 }
 
 function showPage(Button) {
-    console.log("working");
     const buttonName = Button.name;
     hidePages();
 
@@ -22,10 +21,16 @@ function showPage(Button) {
 
 function toggleProjectContent(project) {
     const projectContent = project.querySelector(".project-content");
-    let currentDisplay = window.getComputedStyle(projectContent).display;
-    if (currentDisplay == "none") {
-        projectContent.style.display = "flex";
+    let contentMaxHieght = projectContent.style.maxHeight;
+    // Get scrollHeight
+    projectContent.style.display = "block";
+    let fullHeight = projectContent.scrollHeight;
+    projectContent.style.display = "flex";
+
+    if (contentMaxHieght === "" || contentMaxHieght === "0px") {
+        projectContent.style.maxHeight = fullHeight + "px";
     } else {
-        projectContent.style.display = "none";
+        projectContent.style.maxHeight = "0px";
     }
 }
+

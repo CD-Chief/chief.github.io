@@ -118,7 +118,7 @@ header {
 }
 
 .line {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
     margin-bottom: 0;
 }
 
@@ -179,10 +179,29 @@ header {
 }
 
 .project-content {
-    display: none;
+    display: block;
     flex-direction: column;
+    justify-content: center;
+    max-height: 0;
+    transition: max-height 0.5s ease;
+    overflow: hidden;
 }
 
 .projects-header {
     text-align: center;
+    text-decoration: underline;
+}
+
+p {
+    width: 90%;
+    margin: auto;
+    font-family: Georgia, serif;
+}
+
+.project-picture {
+    width: 60%;
+    margin: auto;
+    margin-top: 5px;
+    border: 2px solid black;
+    border-radius: 15px;
 }
