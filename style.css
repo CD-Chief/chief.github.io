@@ -145,7 +145,7 @@ header {
 .project-title {
     text-align: center;
     justify-content: center;
-    margin: 0;
+    margin: 5px 0px;
 }
 
 .program-buttons {
@@ -153,6 +153,7 @@ header {
     flex-direction: row;
     width: 100%;
     justify-content: center;
+    margin-bottom: 10px;
 }
 
 .program {
@@ -195,11 +196,13 @@ header {
     text-decoration: underline;
 }
 
-p {
+p, li, ul, h3, a {
     width: 90%;
     margin: auto;
     font-family: Georgia, serif;
+    padding: 2px;
 }
+
 
 .project-picture {
     width: 60%;
