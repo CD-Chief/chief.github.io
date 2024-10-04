@@ -74,6 +74,7 @@ html, body {
     background: white;
     color: black;
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
 .page {
@@ -115,6 +116,7 @@ header {
     background: white;
     color: black;
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
 .line {
@@ -137,6 +139,7 @@ header {
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
     border: 1px;
     margin: 22.5px 0px;
+    cursor: pointer;
 }
 
 .project-title {
