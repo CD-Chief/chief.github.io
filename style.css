@@ -238,3 +238,25 @@ p, li, ul, h3, a {
     border: 2px solid black;
     border-radius: 15px;
 }
+
+@media (max-width: 600px) {
+    .nav-button {
+        font-size: large;
+    }
+
+    #name {
+        font-size: x-large;
+    }
+    
+    #occupation {
+        font-size: large;
+    }
+    
+    #course {
+        font-size: x-small;
+    }
+
+    .about-p {
+        font-size: large;
+    }
+}
