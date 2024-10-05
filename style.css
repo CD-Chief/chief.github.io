@@ -259,4 +259,8 @@ p, li, ul, h3, a {
     .about-p {
         font-size: large;
     }
+    .backButton {
+        font-size: large;
+        width: auto;
+    }
 }
