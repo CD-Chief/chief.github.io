@@ -28,14 +28,62 @@
 
         <div id="nav-buttons">
           <button onclick="showPage(this)" class="nav-button" name="home">HOME</button>
+          <button onclick="showPage(this)" class="nav-button" name="about">ABOUT</button>
           <button onclick="showPage(this)" class="nav-button" name="projects">PROJECTS</button>
-          <button class="nav-button" name="about">ABOUT</button>
-          <button class="nav-button" name="contact">CONTACT</button>
-          <button class="nav-button" name="education">EDUCATION</button>
+          <button onclick="showPage(this)" class="nav-button" name="contact">CONTACT</button>
         </div> 
 
      </nav>
 
+   </div>
+
+   <div class="page" id="about">
+    <title> About </title>
+    <header> About Me</header>
+    <button onclick="showPage(this)" name="home" class="backButton">Home</button>
+    <h1 class="line"></h1>
+
+    <p class="about-p">
+      Hi, I'm Chief-Daniel Osei, a passionate software engineering student at Newcastle
+       University with a deep fascination for all things tech.
+    </p>
+    <p class="about-p">
+      My journey into the world of engineering began during my early school years,
+       where I was constantly interested in how the devices and software around me worked.
+        This curiosity naturally drew me to computer science, a subject I pursued throughout my education.
+         Since then, the subject has developed into a lifelong passion and I am now studying software
+          engineering and working towards becoming a professional in the field.
+    </p>
+    <p class="about-p">
+      I discovered my love for programming when I started learning Python at school,
+       which inspired me to work on personal projects at home. During my International
+        Baccalaureate (IB), I expanded my knowledge with Java, which quickly became my
+         favourite high-level language. During this time, I also dabbled in web development 
+         and learnt Lua while working on a video game project with friends. Since then, my 
+         studies have further developed my skills and given me the opportunity to learn new 
+         languages such as Bash, Go and C.
+    </p>
+    <p class="about-p">
+      Currently, I am focusing on diversifying my portfolio and gaining professional experience in the
+       industry. One of my recent goals was to master React, a popular web development framework, although
+        I have always had a preference for backend development. Stepping outside of my comfort zone
+         has helped me understand web technologies and I am now able to work seamlessly in both frontend
+          and backend environments.
+    </p>
+    <p class="about-p">
+      I am always keen to connect with like-minded people, whether they are developers,
+       employers or just people interested in technology. If you would like to exchange ideas
+        or collaborate with me, please don't hesitate to contact me!
+    </p>
+   </div>
+
+   <div class="page" id="contact">
+    <title> Contact </title>
+    <header> Contact </header>
+    <button onclick="showPage(this)" name="home" class="backButton">Home</button>
+    <h1 class="line"></h1>
+    <header>Email</header>
+    <a class="email" href="mailto:chief.d.osei@gmail.com">chief.d.osei@gmail.com</a>
    </div>
 
    <div class="page" id="projects">
@@ -74,8 +122,8 @@
         </p>
         <h3>Outcome</h3>
         <p>
-          Overall this project was actually quite challenging as it was in a way programming in a way I never had to before
-          which also included the planning stage before the programming, making sure I knew the structure before beginning
+          Overall this project was actually quite challenging as it was programming in a way I never had to before
+          which also included the planning stage before the developing, making sure I knew the structure before commencing
         </p>
         <h3>Future improvements</h3>
         <p>
@@ -147,11 +195,12 @@
       </div>
     </div>
 
-    <!-- Conways Game of life-->
+    <!-- Film Studio Database-->
     <div onclick="toggleProjectContent(this)" class="project" id="Film Studio Database">
       <h1 class="project-title">Film Studio Database</h1>
       <div class="program-buttons">
         <button class="program" id="Java">Java</button>
+        <button class="program" id="OOP">OOP</button>
       </div>
       <div class="project-content">
 
@@ -192,6 +241,53 @@
              Exploring the possibility of integrating the application with an online database like IMDb to automatically
               update film information could provide users with real-time data and significantly reduce manual input.
         </p>
+        <p> *Not able to link repository as it under the universities private organisation</p>
+      </div>
+    </div>
+
+    <!-- Conways Game of life-->
+    <div onclick="toggleProjectContent(this)" class="project" id="Conways Game of life">
+      <h1 class="project-title">Conways Game of life</h1>
+      <div class="program-buttons">
+        <button class="program" id="Java">Java</button>
+      </div>
+      <div class="project-content">
+        <p>
+          This project was part of a mathematics research essay, where I utilized my programming skills to collect and analyze data. I developed Conway’s Game of Life in Java, implementing both manual and random input methods to generate various game configurations. This project allowed me to explore the intersection of mathematics and computer science while applying programming concepts to a theoretical problem.
+        </p>
+        <p>
+          Please note that this project was completed in 2022!
+          I have progressed a lot since then
+        </p>
+        <h3>Key Features</h3>
+        <ul>
+          <li><strong>Manual Input</strong>: Users can manually configure the game settings.</li>
+          <li><strong>Random Input Generation</strong>: The game can automatically generate random configurations.</li>
+          <li><strong>Data Collection</strong>: The program collects output data based on different configurations.</li>
+        </ul>
+
+        <h3>Challenges</h3>
+        <p>
+          The most significant challenge I faced was abstracting the rules and mechanics of the game into a functional code structure,
+           which resulted in approximately 350 lines of code. Implementing the complex rules required extensive use of nested for loops
+            and conditional statements to check the various conditions for cell survival, death, and reproduction.
+        </p>
+
+        <h3>Outcome</h3>
+        <p>
+          The project was ultimately successful, demonstrating the practical application of programming in mathematical research.
+           I overcame various problem-solving hurdles, gaining a deeper understanding of the game’s mechanics and the intricacies
+            of coding its logic. The ability to manipulate configurations and observe their outcomes provided valuable insights for my research.
+        </p>
+
+        <h3>Future Improvements</h3>
+        <p>
+          In the future, I would like to enhance the project by visualizing the game on a graphical user interface, displaying the
+           cells on a screen. This would not only improve user interaction but also make it easier to observe the dynamic changes of the game.
+            Although I didn't have the necessary methods to implement this at the time, I believe it would significantly enrich the overall
+             experience of Conway’s Game of Life.
+        </p>
+        <a href="https://replit.com/@Zephrio/GOL-20#Main.java" >Link to repl</a>
       </div>
     </div>
 

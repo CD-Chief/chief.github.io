@@ -78,8 +78,31 @@ html, body {
 }
 
 .page {
+    display: none;
     margin: 0;
     width: 100%;
+}
+
+#about {
+    flex-direction: column;
+}
+
+.about-p {
+    font-size: x-large;
+    text-align: center;
+    width: 60%;
+    margin: 10px auto;
+}
+
+#contact {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.email {
+    text-align: center;
+    margin: auto;
+    font-size: large;
 }
 
 #projects {
@@ -157,7 +180,7 @@ header {
 }
 
 .program {
-    margin: 0;
+    margin: 0px 2px;
     width: auto;
     text-align: center;
     border: 2px solid black;
@@ -171,7 +194,7 @@ header {
 }
 
 #React {
-    background-color: blueviolet;
+    background-color: rgb(153, 81, 220);
 }
 
 #Java {
@@ -180,6 +203,10 @@ header {
 
 #Group-Project {
     background-color: yellow;
+}
+
+#OOP {
+    background-color: orange;
 }
 
 .project-content {

@@ -14,9 +14,10 @@ function showPage(Button) {
 
     if (buttonName == "home") {
         document.getElementById("main").setAttribute("style", "display: flex");
-    } else if (buttonName == "projects") {
+    } else {
         document.getElementById(buttonName).setAttribute("style", "display: flex");
     }
+
 }
 
 function toggleProjectContent(project) {
