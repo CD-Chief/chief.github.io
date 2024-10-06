@@ -219,7 +219,7 @@ header {
 }
 
 #Lua {
-    background-color: lightblue;
+    background-color: rgb(40, 52, 214);
 }
 
 .project-content {
@@ -275,5 +275,9 @@ p, li, ul, h3, a {
     .backButton {
         font-size: large;
         width: auto;
+    }
+
+    #main-name {
+        font-size: x-large;
     }
 }
