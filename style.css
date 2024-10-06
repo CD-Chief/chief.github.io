@@ -99,6 +99,11 @@ html, body {
     margin: 10px auto;
 }
 
+#main-name {
+    font-size: xx-large;
+    
+}
+
 #contact {
     flex-direction: column;
     justify-content: center;
