@@ -10,37 +10,36 @@
     <script src="script.js"></script>
   </head>
   <body>
-    
 
-
-    <div class="page" id="main">
-      <title>Home </title>
-
-      <div id="home-image">
-          <img src="images/Chief-Skyy.jpeg" alt="Picture of me" id="sky" >
+    <nav class="navbar">
+      <div class="name">
+        <h2>CHIEF-DANIEL</h2>
       </div>
 
-      <nav id="main-nav">
+      </div>
+      <div class="nav-buttons">
+        <button onclick="showPage('home', this)" class="nav-button" style="display: none;">HOME</button>
+        <button onclick="showPage('projects', this)" class="nav-button" >PROJECTS</button>
+        <button onclick="showPage('about', this)" class="nav-button"  >ABOUT</button>
+        <button onclick="showPage('contact', this)" class="nav-button" >CONTACT</button>
+      </div>
+    </nav>
 
-        <h1 class="title" id="name">CHIEF-DANIEL OSEI</h1>
-        <h2 class="title" id="occupation">STUDENT</h2>
-        <h5 class="title" id="course">SOFTWARE ENGINEERING</h5>
+    <div class="page" id="home">
+      <title>Home </title>
 
-        <div id="nav-buttons">
-          <button onclick="showPage(this)" class="nav-button" name="home" id="home-title">HOME</button>
-          <button onclick="showPage(this)" class="nav-button" name="about">ABOUT</button>
-          <button onclick="showPage(this)" class="nav-button" name="projects">PROJECTS</button>
-          <button onclick="showPage(this)" class="nav-button" name="contact">CONTACT</button>
-        </div> 
 
+      <img src="images/Chief-Skyy.jpeg" alt="Picture of me" id="home-image" >
+
+
+      <nav id="intro">
+        <h1 class="title" id="intro-text" ><strong id="strong">Hi 👋, I'm Chief-Daniel Osei </strong>, a passionate Software Engineering student at Newcastle University</h1>
      </nav>
-
    </div>
 
    <div class="page" id="about">
     <title> About </title>
     <header> About Me</header>
-    <button onclick="showPage(this)" name="home" class="backButton">Home</button>
     <h1 class="line"></h1>
 
     <p class="about-p" id="main-name">
@@ -83,7 +82,6 @@
    <div class="page" id="contact">
     <title> Contact </title>
     <header> Contact </header>
-    <button onclick="showPage(this)" name="home" class="backButton">Home</button>
     <h1 class="line"></h1>
     <header>Email</header>
     <a class="email" href="mailto:chief.d.osei@gmail.com" target="_blank">chief.d.osei@gmail.com</a>
@@ -96,7 +94,6 @@
    <div class="page" id="projects">
     <title>Projects</title>
     <header> Projects </header>
-    <button onclick="showPage(this)" name="home" class="backButton">Home</button>
     <h1 class="line"></h1>
 
 

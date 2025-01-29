@@ -8,15 +8,23 @@ function hidePages() {
     }
 }
 
-function showPage(Button) {
-    const buttonName = Button.name;
-    hidePages();
+function showNav() {
+    const nav = document.getElementsByClassName('nav-button');
 
-    if (buttonName == "home") {
-        document.getElementById("main").setAttribute("style", "display: flex");
-    } else {
-        document.getElementById(buttonName).setAttribute("style", "display: flex");
+    for (let i = 0; i < nav.length; i++) {
+        nav[i].setAttribute('style', 'display: inline-block');
     }
+}
+
+function hideNav(nav) {
+    nav.setAttribute('style', 'display: none');
+}
+
+function showPage(name, nav) {
+    hidePages();
+    showNav();
+    document.getElementById(name).setAttribute("style", "display: flex");
+    hideNav(nav);
 
 }
 
