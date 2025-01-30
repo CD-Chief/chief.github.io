@@ -12,8 +12,6 @@ html, body {
 
 /* Navigation Bar */
 
-
-
 .navbar {
     display: flex;
     flex-direction: row;
@@ -21,6 +19,11 @@ html, body {
     align-items: center;
     height: 7%;
     background-color: #9ebad7 ;
+    transition: box-shadow 0.3s ease;
+}
+
+.navbar:hover {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .name {
@@ -127,10 +130,24 @@ html, body {
     justify-content: center;
 }
 
-.email {
+.contact-container {
+    display: flex;
+    display: row;
+    justify-content: space-evenly;
+}
+
+.link {
+    color: white;
     text-align: center;
     margin: auto;
-    font-size: large;
+    font-size:xx-large;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.link:hover {
+    font-size: xxx-large;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
 }
 
 #projects {
@@ -138,14 +155,18 @@ html, body {
     flex-direction: column;
 }
 
-header {
+.page-header {
     color: white;
     font-size: xxx-large;
     font-family: OCR A Std, monospace;
     width: 100%;
     text-align: center;
     justify-content: center;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+#contact-header {
+    margin-bottom: 30px;
 }
 
 .backButton {
