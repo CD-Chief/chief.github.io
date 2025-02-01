@@ -315,6 +315,26 @@ p, li, ul, h3, a {
     border-radius: 15px;
 }
 
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5px 0px;
+    background-color: rgba(255, 255, 255, 0.485);
+    border-radius: 50px;
+    width: 60%;
+    margin: auto;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+}
+
+#under-project {
+    width: 25px;
+}
+
 @media (max-width: 600px) {
     .nav-button {
         font-size: large;
