@@ -150,11 +150,6 @@ html, body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
 }
 
-#projects {
-    display: none;
-    flex-direction: column;
-}
-
 .page-header {
     color: white;
     font-size: xxx-large;
@@ -196,29 +191,7 @@ html, body {
     margin-bottom: 0;
 }
 
-.project {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    width: 80%;
-    border: 3px solid black;
-    border-radius: 15px;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
-    margin: 20px auto;
-}
-
-.project:hover {
-    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
-    border: 1px;
-    margin: 22.5px auto;
-    cursor: pointer;
-}
-
-.project-title {
-    text-align: center;
-    justify-content: center;
-    margin: 5px 0px;
-}
+/* Project tags */
 
 .program-buttons {
     display: flex;
@@ -262,6 +235,69 @@ html, body {
     background-color: rgb(40, 52, 214);
 }
 
+
+
+
+p, li, ul, h3, a {
+    width: 90%;
+    margin: auto;
+    font-family: Georgia, serif;
+    padding: 2px;
+    text-align: justify;
+    color: #333;
+}
+
+/* Projects Page */
+
+#projects {
+    display: none;
+    flex-direction: column;
+}
+
+.projects-header {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.projects-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.projects-column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+    margin: 20.2px auto;
+    cursor: pointer;
+}
+
+.project-title {
+    text-align: center;
+    justify-content: center;
+    margin: 5px 0px;
+    color: #444;   
+}
+
 .project-content {
     display: block;
     flex-direction: column;
@@ -270,20 +306,6 @@ html, body {
     transition: max-height 0.5s ease;
     overflow: hidden;
 }
-
-.projects-header {
-    text-align: center;
-    text-decoration: underline;
-}
-
-p, li, ul, h3, a {
-    width: 90%;
-    margin: auto;
-    font-family: Georgia, serif;
-    padding: 2px;
-    text-align: justify;
-}
-
 
 .project-picture {
     width: 60%;

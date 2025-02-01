@@ -30,13 +30,13 @@ function showPage(name, nav) {
 
 function toggleProjectContent(project) {
     const projectContent = project.querySelector(".project-content");
-    let contentMaxHieght = projectContent.style.maxHeight;
+    let contentMaxHeight = projectContent.style.maxHeight;
     // Get scrollHeight
     projectContent.style.display = "block";
     let fullHeight = projectContent.scrollHeight;
     projectContent.style.display = "flex";
 
-    if (contentMaxHieght === "" || contentMaxHieght === "0px") {
+    if (contentMaxHeight === "" || contentMaxHeight === "0px") {
         projectContent.style.maxHeight = fullHeight + "px";
     } else {
         projectContent.style.maxHeight = "0px";
