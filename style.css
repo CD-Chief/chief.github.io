@@ -57,7 +57,7 @@ html, body {
 /* Home Page */
 
 #home {
-    max-height: 100vh;
+    max-height: 93vh;
     display: flex;
     flex-direction: row;
     height: 100%;
@@ -67,6 +67,7 @@ html, body {
     height: 93%;
     width: 50%;
     border-radius: 50%;
+    object-fit: contain;
 }
 
 #intro {
@@ -74,6 +75,8 @@ html, body {
     text-align: start;
     margin: auto;
     margin-left: 5%;
+    display: flex;
+    flex-direction: column;
 }
 
 .title {
@@ -105,6 +108,13 @@ html, body {
     width: 100%;
 }
 
+.about-container {
+    background-color: white;
+    border-radius: 5%;
+    width: 70%;
+    margin: auto;
+}
+
 #about {
     flex-direction: column;
 }
@@ -112,7 +122,7 @@ html, body {
 .about-p {
     font-size: x-large;
     text-align: justify;
-    width: 60%;
+    width: 90%;
     margin: 10px auto;
 }
 
@@ -211,17 +221,10 @@ html, body {
     font-family: Courier, monospace;
 }
 
-#HTML-JS-CSS {
-    background-color: lightblue;
-}
-
-#React {
+#Hackathon {
     background-color: rgb(153, 81, 220);
 }
 
-#Java {
-    background-color: green;
-}
 
 #Group-Project {
     background-color: yellow;
@@ -230,13 +233,6 @@ html, body {
 #OOP {
     background-color: orange;
 }
-
-#Lua {
-    background-color: rgb(40, 52, 214);
-}
-
-
-
 
 p, li, ul, h3, a {
     width: 90%;
@@ -308,7 +304,7 @@ p, li, ul, h3, a {
 }
 
 .project-picture {
-    width: 60%;
+    width: 95%;
     margin: auto;
     margin-top: 5px;
     border: 2px solid black;
@@ -322,7 +318,7 @@ p, li, ul, h3, a {
     margin: 5px 0px;
     background-color: rgba(255, 255, 255, 0.485);
     border-radius: 50px;
-    width: 60%;
+    width: auto;
     margin: auto;
     margin-bottom: 10px;    
     padding: 10px;
